@@ -2,7 +2,7 @@ import { useState } from "react";
 import { IoMdSearch } from "react-icons/io";
 import { useNavigate } from "react-router";
 
-const Search = ({ value, placeholder }) => {
+const Search = ({ value, placeholder, toggleMenu }) => {
   const [searchItem, setSearchItem] = useState("");
   const navigate = useNavigate();
 
@@ -14,6 +14,8 @@ const Search = ({ value, placeholder }) => {
     event.preventDefault();
     if (!searchItem) return;
     navigate(`/searchpage?q=${searchItem}`);
+
+    toggleMenu();
   };
 
   return (

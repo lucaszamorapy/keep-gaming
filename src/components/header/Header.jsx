@@ -51,7 +51,10 @@ const Header = () => {
                 <Link to={item.url}>{item.name}</Link>
               </li>
             ))}
-            <Search placeholder={"O que você procura?"} />
+            <Search
+              placeholder={"O que você procura?"}
+              toggleMenu={toggleMenu}
+            />
           </ul>
         </nav>
       )}
