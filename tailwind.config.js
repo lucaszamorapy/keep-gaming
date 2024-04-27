@@ -16,6 +16,7 @@ export default {
         gamingBlack300: "#161616",
         gamingBlack200: "#202020",
         gamingBlack100: "#373737",
+        gamingYellow300: "#FDC401",
       },
     },
   },
