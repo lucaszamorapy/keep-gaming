@@ -25,7 +25,7 @@ const Header = () => {
                 <Link to={item.url}>{item.name}</Link>
               </li>
             ))}
-            <Search />
+            <Search placeholder={"O que você procura?"} />
           </ul>
           <span
             className={`mobile-menu-5 block lg:hidden ${
@@ -51,7 +51,7 @@ const Header = () => {
                 <Link to={item.url}>{item.name}</Link>
               </li>
             ))}
-            <Search />
+            <Search placeholder={"O que você procura?"} />
           </ul>
         </nav>
       )}

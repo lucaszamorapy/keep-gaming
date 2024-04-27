@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import useFetch from "../../hooks/useFetch";
-import Search from "../../utils/Search";
 import GameCard from "../gameCard/GameCard";
-import logo from "/logo/keep-gaming.png";
 import Loading from "../../utils/loading/Loading";
 
 const gamesURL = import.meta.env.VITE_API;
@@ -22,7 +20,6 @@ const AllGames = () => {
     };
     getGames();
   }, [request]);
-  console.log(games);
 
   return (
     <section className="px-5 mt-20 lg:px-0">
