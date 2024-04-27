@@ -1,0 +1,20 @@
+{
+  "path": [
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "Desenvolvedores",
+      "url": "/developers"
+    },
+    {
+      "name": "Plataformas",
+      "url": "/plataforms"
+    },
+    {
+      "name": "Lojas",
+      "url": "/store"
+    }
+  ]
+}

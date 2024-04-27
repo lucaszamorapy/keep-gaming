@@ -12,7 +12,10 @@ const GameCard = ({ game, showLink }) => {
         <div className="flex justify-between flex-wrap ">
           <div className="flex gap-2 items-center">
             {game.genres.map((genre, index) => (
-              <p className="text-white text-lg border-b-2 border-gamingYellow300">
+              <p
+                key={index}
+                className="text-white text-lg border-b-2 border-gamingYellow300"
+              >
                 {genre.name}
               </p>
             ))}
