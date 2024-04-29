@@ -14,7 +14,6 @@ const Search = ({ value, placeholder, toggleMenu }) => {
     event.preventDefault();
     if (!searchItem) return;
     navigate(`/searchpage?q=${searchItem}`);
-
     toggleMenu();
   };
 

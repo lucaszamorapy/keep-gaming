@@ -3,7 +3,6 @@ import { useSearchParams } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
 import { useEffect, useState } from "react";
 import Loading from "../utils/loading/Loading";
-import Button from "../utils/Button";
 
 const gamesURL = import.meta.env.VITE_API;
 const apiKey = import.meta.env.VITE_API_KEY;
@@ -35,7 +34,7 @@ const SearchPage = () => {
           ) : (
             <>
               {game.map((item, index) => (
-                <img key={index} src={item.background_image} alt="" />
+                <p key={index}>{item.name}</p>
               ))}
             </>
           )}
