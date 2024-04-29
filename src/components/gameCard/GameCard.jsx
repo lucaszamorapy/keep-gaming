@@ -8,7 +8,7 @@ const GameCard = ({ game, showLink }) => {
   return (
     <div className="flex flex-col ">
       <ImageSkeleton src={game.background_image} alt={game.name} />
-      <div className="flex flex-col px-3 pt-2 pb-5  bg-gamingBlack200">
+      <div className="flex flex-col px-3 pt-2 pb-5 bg-gamingBlack200 lg:h-[160px]">
         <div className="flex justify-between flex-wrap ">
           <div className="flex gap-2 items-center">
             {game.genres.map((genre, index) => (
