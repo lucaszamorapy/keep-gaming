@@ -1,9 +1,6 @@
 [
   {
     "id": 1,
-    "imgDesk": "/destaques/1/desktop.png",
-    "imgTablet": "/destaques/1/tablet.png",
-    "imgMobi": "/destaques/1/mobile.png",
     "titulo": "Keep Gaming: Explore os Favoritos da Comunidade Global!",
     "descricao": "Descubra os jogos mais populares e emocionantes que estão dominando as paradas de todo o mundo. Fique por dentro das tendências e escolha seus próximos desafios!",
     "status": true,
@@ -11,9 +8,6 @@
   },
   {
     "id": 2,
-    "imgDesk": "/destaques/2/desktop.png",
-    "imgTablet": "/destaques/2/tablet.png",
-    "imgMobi": "/destaques/2/mobile.png",
     "titulo": "Estratégias dos Jogos: Domine as Táticas dos Melhores!",
     "descricao": "Aprenda as estratégias e táticas mais eficazes utilizadas pelos jogadores de elite para dominar os jogos mais populares do momento. Seja parte da vanguarda!",
     "status": true,
@@ -21,9 +15,6 @@
   },
   {
     "id": 3,
-    "imgDesk": "/destaques/3/desktop.png",
-    "imgTablet": "/destaques/3/tablet.png",
-    "imgMobi": "/destaques/3/mobile.png",
     "titulo": "Descubra Conquistas e Segredos: Explore o Universo dos Troféus!",
     "descricao": "Desbrave os segredos ocultos, conquiste troféus e desbloqueie conteúdos exclusivos nos jogos mais jogados em todo o mundo. Seja reconhecido como um verdadeiro campeão!",
     "status": true,

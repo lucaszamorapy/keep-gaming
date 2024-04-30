@@ -17,8 +17,8 @@ const AllGames = () => {
       if (json && json.results) {
         setGames(json.results); // assuming json.results is the array of games
       }
+      console.log(games);
     };
-    console.log(games);
     getGames();
   }, [request]);
 
