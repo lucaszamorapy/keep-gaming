@@ -11,3 +11,14 @@
 body {
   background-color: #161616;
 }
+
+::-webkit-scrollbar {
+  width: 5px; /* Largura da barra de rolagem */
+  background-color: #242424; /* Cor de fundo da barra de rolagem */
+}
+
+/* Estiliza o "thumb" (o scroll em si) */
+::-webkit-scrollbar-thumb {
+  background-color: #fdc401; /* Cor do scroll */
+  border-radius: 5px; /* Borda do scroll */
+}
