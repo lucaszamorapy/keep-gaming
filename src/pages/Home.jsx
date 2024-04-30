@@ -1,4 +1,4 @@
-import AllGames from "../components/allGames/AllGames";
+import AllGames from "../components/AllGames";
 
 const Home = () => {
   return (

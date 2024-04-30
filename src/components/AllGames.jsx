@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import useFetch from "../../hooks/useFetch";
-import GameCard from "../gameCard/GameCard";
-import Loading from "../../utils/loading/Loading";
+import useFetch from "../hooks/useFetch";
+import GameCard from "./GameCard";
+import Loading from "../utils/loading/Loading";
 
 const gamesURL = import.meta.env.VITE_API;
 const apiKey = import.meta.env.VITE_API_KEY;
@@ -18,6 +18,7 @@ const AllGames = () => {
         setGames(json.results); // assuming json.results is the array of games
       }
     };
+    console.log(games);
     getGames();
   }, [request]);
 
@@ -29,7 +30,7 @@ const AllGames = () => {
             <Loading />
           ) : (
             <>
-              <h1 className="text-7xl mt-10 mb-5">Todos os Jogos</h1>
+              <h1 className="text-7xl uppercase mt-10 mb-5">Todos os Jogos</h1>
               <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 items-center">
                 {games.map((game, index) => (
                   <GameCard game={game} key={index} showLink={true} />

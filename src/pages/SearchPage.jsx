@@ -21,8 +21,8 @@ const SearchPage = () => {
         setGame(json.results);
       }
     };
-    getSearchGames();
     console.log(game);
+    getSearchGames();
   }, [query]);
 
   return (

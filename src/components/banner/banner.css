@@ -1,0 +1,8 @@
+.swiper-pagination-bullet {
+  background-color: #fdc401 !important;
+  border: 1px solid #161616; /* Adiciona uma borda preta */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fdc401 !important;
+}
