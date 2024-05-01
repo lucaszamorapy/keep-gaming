@@ -10,6 +10,7 @@ const StatsPie = ({ game, width, height }) => {
           y: item.percent,
         }))
       : [];
+
   const sliceColors = ["#fdc401", "#C89B00", "#9D7A00", "#7B6001"];
 
   return (

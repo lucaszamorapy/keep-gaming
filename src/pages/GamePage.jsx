@@ -30,7 +30,7 @@ const GamePage = () => {
 
   return (
     <section className="mt-[120px] px-5 lg:px-0">
-      <div className="container">
+      <div className="container animeLeft ">
         {game ? (
           <>
             <GameDescription game={game} />

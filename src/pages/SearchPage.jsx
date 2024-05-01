@@ -26,7 +26,7 @@ const SearchPage = () => {
   }, [query]);
 
   return (
-    <section className="px-5 mt-20 lg:px-0">
+    <section className="px-5 mt-20 animeLeft lg:px-0">
       <div className="flex justify-center gap-5 items-center">
         <div className="container">
           {loading ? (

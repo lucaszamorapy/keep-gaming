@@ -12,7 +12,7 @@ const GameDescription = ({ game }) => {
       </div>
       <img
         src={game.background_image}
-        className="rounded-xl object-cover"
+        className="rounded-xl object-cover h-[687px] w-full"
         alt=""
       />
       <div className="flex flex-col mt-10 gap-5">
