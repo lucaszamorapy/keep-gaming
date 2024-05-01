@@ -13,7 +13,7 @@ const ImageSkeleton = ({ alt, src, ...props }) => {
     <div className="relative">
       {skeleton && <div className="skeleton"></div>}
       <img
-        className="rounded-t-lg img-skeleton w-full  lg:h-[163px] lg:object-cover"
+        className="rounded-t-lg img-skeleton w-full h-[230px] lg:h-[163px] object-cover"
         src={src}
         alt={alt}
         onLoad={handleLoad}
