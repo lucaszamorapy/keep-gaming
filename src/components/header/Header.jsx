@@ -15,7 +15,9 @@ const Header = () => {
     <section className="px-5 header-desk fixed top-0 w-full z-10 lg:px-0">
       <div className="container">
         <nav className="flex justify-between items-center gap-5">
-          <img src={logo} className="w-[100px]" alt="Logo Keep Gaming" />
+          <Link to={"/"}>
+            <img src={logo} className="w-[100px]" alt="Logo Keep Gaming" />
+          </Link>
           <ul className="hidden gap-5 lg:flex items-center">
             {navigation.path.map((item, index) => (
               <li
