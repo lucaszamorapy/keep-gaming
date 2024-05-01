@@ -22,3 +22,13 @@ body {
   background-color: #fdc401; /* Cor do scroll */
   border-radius: 5px; /* Borda do scroll */
 }
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh + 7rem);
+}
+
+.AppBody {
+  flex: 1;
+}

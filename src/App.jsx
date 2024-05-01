@@ -3,17 +3,23 @@ import Home from "./pages/Home";
 import GamePage from "./pages/GamePage";
 import Header from "./components/header/Header";
 import SearchPage from "./pages/SearchPage";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/game/:id" element={<GamePage />} />
-        <Route path="/searchpage" element={<SearchPage />} />
-      </Routes>
-    </BrowserRouter>
+    <div className="App">
+      <BrowserRouter>
+        <Header />
+        <main className="AppBody">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/game/:id" element={<GamePage />} />
+            <Route path="/searchpage" element={<SearchPage />} />
+          </Routes>
+        </main>
+        <Footer />
+      </BrowserRouter>
+    </div>
   );
 }
 
