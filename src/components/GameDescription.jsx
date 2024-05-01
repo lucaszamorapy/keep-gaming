@@ -10,11 +10,7 @@ const GameDescription = ({ game }) => {
           {game.name}
         </h1>
       </div>
-      <img
-        src={game.background_image}
-        className="rounded-xl object-cover h-[687px] w-full"
-        alt=""
-      />
+      <img src={game.background_image} className="rounded-xl  w-full" alt="" />
       <div className="flex flex-col mt-10 gap-5">
         <h1 className="text-5xl uppercase">Descrição do Jogo</h1>
         <div className="flex gap-5 items-center flex-wrap lg:gap-10">
