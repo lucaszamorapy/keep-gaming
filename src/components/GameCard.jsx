@@ -27,9 +27,12 @@ const GameCard = ({ game, showLink }) => {
         </div>
         <h2 className="text-2xl mt-2">{game.name}</h2>
         <div className="flex mt-2 gap-2">
-          <p className="text-lg border-2 py-1 px-5 bg-purple-950 border-purple-800 rounded-full">
-            {game.esrb_rating.name}
-          </p>
+          {/* Verifica se game.esrb_rating existe antes de acessar game.esrb_rating.name */}
+          {game.esrb_rating && (
+            <p className="text-lg border-2 py-1 px-5 bg-purple-950 border-purple-800 rounded-full">
+              {game.esrb_rating.name}
+            </p>
+          )}
         </div>
       </div>
       {showLink && (
