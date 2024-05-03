@@ -13,7 +13,7 @@ const GameStore = ({ game }) => {
             key={index}
           >
             <p className="text-xl">{item.store.name}</p>
-            <Link to={item.store.domain}>
+            <Link target="_blank" to={`//${item.store.domain}`}>
               <Button
                 buttonText={"Ver loja"}
                 styleCard={false}

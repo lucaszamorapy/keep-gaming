@@ -37,7 +37,11 @@ const GameCard = ({ game, showLink }) => {
       </div>
       {showLink && (
         <Link to={`/game/${game.id}`}>
-          <Button buttonText={"Ver detalhes"} style={"rounded-b-xl"} />
+          <Button
+            buttonText={"Ver detalhes"}
+            styleCard={true}
+            style={"rounded-b-xl"}
+          />
         </Link>
       )}
     </div>

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Button = ({ buttonText, styleCard = true, style, onClick }) => {
+const Button = ({ buttonText, styleCard, style, onClick }) => {
   return (
     <button
       onClick={onClick}
