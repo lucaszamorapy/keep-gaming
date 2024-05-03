@@ -1,11 +1,11 @@
 import React from "react";
 import { VictoryPie } from "victory";
 
-const StatsPie = ({ game, width, height }) => {
+const StatsPie = ({ stats, width, height }) => {
   // Verifica se game e game.ratings são definidos
   const data =
-    game && game.ratings
-      ? game.ratings.map((item) => ({
+    stats && stats.ratings
+      ? stats.ratings.map((item) => ({
           x: item.title.toUpperCase(),
           y: item.percent,
         }))
@@ -15,7 +15,7 @@ const StatsPie = ({ game, width, height }) => {
 
   return (
     <>
-      {game && (
+      {stats && (
         <section className="flex flex-col gap-5 ">
           <h1 className="text-5xl uppercase">Estatísticas</h1>
           <div className="border-2 rounded-xl border-gamingBlack100">

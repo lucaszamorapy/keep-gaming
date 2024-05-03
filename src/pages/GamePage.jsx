@@ -37,7 +37,7 @@ const GamePage = () => {
             <GamePlatform game={game} />
             <div className="grid gap-10 mt-10 grid-cols-1 lg:grid-cols-2">
               <GameStore game={game} />
-              <StatsPie game={game} width={300} height={250} />
+              <StatsPie stats={game} width={300} height={250} />
             </div>
           </>
         ) : (
