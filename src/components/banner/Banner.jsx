@@ -52,11 +52,11 @@ const Banner = () => {
               className="block blur-sm md:hidden  w-full object-cover"
             />
             <div className="container flex justify-center">
-              <div className="absolute block z-30 p-6 max-w-[700px] h-[325px] fade-in lg:p-0 top-1/4 sm:h-[260px] ">
+              <div className="absolute block z-30 p-6 max-w-[700px] h-[325px] fade-in lg:p-0 top-[60px] sm:h-[260px] lg:top-1/4">
                 <h1 className="font-normal uppercase text-5xl lg:text-7xl">
                   {item.titulo}
+                  <p className="text-2xl mt-3">{item.descricao}</p>
                 </h1>
-                <p className="text-2xl mt-3">{item.descricao}</p>
               </div>
             </div>
           </SwiperSlide>
