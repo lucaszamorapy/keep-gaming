@@ -1,31 +1,35 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import useFetch from "../hooks/useFetch";
-import GameCard from "./cards/GameCard";
 import Loading from "../utils/loading/Loading";
 import Button from "../utils/Button";
+import DeveloperCard from "./cards/DeveloperCard";
 const gamesURL = import.meta.env.VITE_API;
 const apiKey = import.meta.env.VITE_API_KEY;
 
-const AllGames = () => {
-  const [games, setGames] = useState([]);
+const AllDevelopers = () => {
+  const [developers, setDevelopers] = useState([]);
   const { request, loading, setLoading } = useFetch();
   const [page, setPage] = useState(1);
 
   useEffect(() => {
-    const getGames = async () => {
-      const url = `${gamesURL}games?${apiKey}&page=${page}`;
+    const getDevelopers = async () => {
+      const url = `${gamesURL}developers?${apiKey}&page_size=20&page=${page}`;
       const { json } = await request(url);
       if (json && json.results) {
-        setGames((prevGames) => {
-          const uniqueGames = json.results.filter(
-            (game) => !prevGames.find((prevGame) => prevGame.id === game.id)
+        setDevelopers((prevDevelopers) => {
+          const uniqueDevelopers = json.results.filter(
+            (developer) =>
+              !prevDevelopers.find(
+                (prevDeveloper) => prevDeveloper.id === developer.id
+              )
           );
-          return [...prevGames, ...uniqueGames];
+          return [...prevDevelopers, ...uniqueDevelopers];
         });
+        console.log(developers);
       }
     };
 
-    getGames();
+    getDevelopers();
   }, [request, page]);
 
   const handleLoadMore = () => {
@@ -37,15 +41,16 @@ const AllGames = () => {
     <section className="px-5 mt-20 lg:px-0">
       <div className="flex gap-5 items-center">
         <div className="container">
-          {games.length === 0 ? (
+          {developers.length === 0 ? (
             <Loading />
           ) : (
             <>
-              <h1 className="text-5xl uppercase mt-10 mb-5">Todos os Jogos</h1>
+              <h1 className="text-5xl uppercase mt-10 mb-5">
+                Maiores Desenvolvedores
+              </h1>
               <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 items-center">
-                {/* Renderiza os jogos filtrados */}
-                {games.map((game, index) => (
-                  <GameCard game={game} key={index} showLink={true} />
+                {developers.map((developer, index) => (
+                  <DeveloperCard key={index} data={developer} showLink={true} />
                 ))}
               </div>
               <div className="flex justify-center mt-8">
@@ -70,4 +75,4 @@ const AllGames = () => {
   );
 };
 
-export default AllGames;
+export default AllDevelopers;

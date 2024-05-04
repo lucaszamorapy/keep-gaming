@@ -4,10 +4,13 @@ import "./banner.css";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
+import { useLocation } from "react-router-dom";
 
 const Banner = () => {
-  const filteredBanners = bannerData.filter((item) => item.status === true);
-  const path = "/destaques/";
+  const { pathname } = useLocation();
+  const filteredBanners = bannerData.filter((item) => item.status === pathname);
+
+  const path = pathname === "/developers" ? "/developers/" : "/destaques/";
 
   const swiperSettings = {
     pagination: { clickable: true },

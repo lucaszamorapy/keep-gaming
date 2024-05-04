@@ -3,21 +3,42 @@
     "id": 1,
     "titulo": "Keep Gaming: Explore os Favoritos da Comunidade Global!",
     "descricao": "Descubra os jogos mais populares e emocionantes que estão dominando as paradas de todo o mundo. Fique por dentro das tendências e escolha seus próximos desafios!",
-    "status": true,
+    "status": "/",
     "ordem": 1
   },
   {
     "id": 2,
     "titulo": "Estratégias dos Jogos: Domine as Táticas dos Melhores!",
     "descricao": "Aprenda as estratégias e táticas mais eficazes utilizadas pelos jogadores de elite para dominar os jogos mais populares do momento. Seja parte da vanguarda!",
-    "status": true,
+    "status": "/",
     "ordem": 2
   },
   {
     "id": 3,
     "titulo": "Descubra Conquistas e Segredos: Explore o Universo dos Troféus!",
     "descricao": "Desbrave os segredos ocultos, conquiste troféus e desbloqueie conteúdos exclusivos nos jogos mais jogados em todo o mundo. Seja reconhecido como um verdadeiro campeão!",
-    "status": true,
+    "status": "/",
+    "ordem": 3
+  },
+  {
+    "id": 4,
+    "titulo": "Aventura Ilimitada com a Electronic Arts!",
+    "descricao": "Explore mundos vastos e emocionantes, mergulhe em histórias cativantes e enfrente desafios épicos com os jogos desenvolvidos pela Electronic Arts. Descubra novas experiências e liberte sua imaginação!",
+    "status": "/developers",
+    "ordem": 1
+  },
+  {
+    "id": 5,
+    "titulo": "Estratégia Redefinida pela Ubisoft: Torne-se um Mestre!",
+    "descricao": "Na Ubisoft, a estratégia é a chave para a vitória. Domine técnicas avançadas, planeje sua jogada perfeita e reivindique o título de mestre em jogos de estratégia. Entre para a elite dos jogadores!",
+    "status": "/developers",
+    "ordem": 2
+  },
+  {
+    "id": 6,
+    "titulo": "Aventuras Épicas com a Sony Interactive Entertainment!",
+    "descricao": "Embarque em aventuras inesquecíveis, descubra segredos ocultos e conquiste troféus de prestígio com a Sony Interactive Entertainment. Explore mundos fascinantes e torne-se uma lenda dos jogos!",
+    "status": "/developers",
     "ordem": 3
   }
 ]
