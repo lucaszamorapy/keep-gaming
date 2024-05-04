@@ -1,13 +1,13 @@
-import AllGames from "../components/games/AllGames";
 import Banner from "../components/banner/Banner";
+import AllPlatforms from "../components/platforms/AllPlatforms";
 
-const Home = () => {
+const Platforms = () => {
   return (
     <section className="animeLeft">
       <Banner />
-      <AllGames />
+      <AllPlatforms />
     </section>
   );
 };
 
-export default Home;
+export default Platforms;

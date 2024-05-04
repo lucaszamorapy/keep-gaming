@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import useFetch from "../hooks/useFetch";
-import Loading from "../utils/loading/Loading";
-import Button from "../utils/Button";
-import DeveloperCard from "./cards/DeveloperCard";
+import useFetch from "../../hooks/useFetch";
+import Loading from "../../utils/loading/Loading";
+import Button from "../../utils/Button";
+import DeveloperCard from "../cards/DeveloperCard";
 const gamesURL = import.meta.env.VITE_API;
 const apiKey = import.meta.env.VITE_API_KEY;
 
@@ -25,7 +25,6 @@ const AllDevelopers = () => {
           );
           return [...prevDevelopers, ...uniqueDevelopers];
         });
-        console.log(developers);
       }
     };
 
@@ -63,7 +62,7 @@ const AllDevelopers = () => {
                     style={
                       "text-white uppercase rounded-lg tracking-widest py-2 px-5 bg-gamingBlack100 hover:bg-opacity-60 duration-300 ease-in-out "
                     }
-                    buttonText={"Carregar Mais Jogos"}
+                    buttonText={"Carregar Mais Desenvolvedores"}
                   />
                 )}
               </div>

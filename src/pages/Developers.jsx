@@ -1,5 +1,5 @@
 import React from "react";
-import AllDevelopers from "../components/AllDevelopers";
+import AllDevelopers from "../components/developers/AllDevelopers";
 import Banner from "../components/banner/Banner";
 
 const Developers = () => {

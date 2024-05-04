@@ -6,7 +6,7 @@ import SearchPage from "./pages/SearchPage";
 import Footer from "./components/Footer";
 import ScrollToTopOnPageChange from "./components/ScrollToTopOnPageChange";
 import Developers from "./pages/Developers";
-import DevelopersPage from "./pages/DevelopersPage";
+import Platforms from "./pages/Platforms";
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
             <Route path="/game/:id" element={<GamePage />} />
             <Route path="/searchpage" element={<SearchPage />} />
             <Route path="/developers" element={<Developers />} />
-            <Route path="/developer/:id" element={<DevelopersPage />} />
+            <Route path="/platforms" element={<Platforms />} />
           </Routes>
         </main>
         <Footer />

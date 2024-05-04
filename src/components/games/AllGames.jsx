@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import useFetch from "../hooks/useFetch";
-import GameCard from "./cards/GameCard";
-import Loading from "../utils/loading/Loading";
-import Button from "../utils/Button";
+import useFetch from "../../hooks/useFetch";
+import GameCard from "../cards/GameCard";
+import Loading from "../../utils/loading/Loading";
+import Button from "../../utils/Button";
 const gamesURL = import.meta.env.VITE_API;
 const apiKey = import.meta.env.VITE_API_KEY;
 
@@ -46,7 +46,7 @@ const AllGames = () => {
               </h1>
               <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 items-center">
                 {games.map((game, index) => (
-                  <GameCard game={game} key={index} showLink={true} />
+                  <GameCard data={game} key={index} showLink={true} />
                 ))}
               </div>
               <div className="flex justify-center mt-8">

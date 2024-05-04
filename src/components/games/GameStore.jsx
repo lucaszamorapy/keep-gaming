@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Button from "../utils/Button";
+import Button from "../../utils/Button";
 
-const GameStore = ({ game }) => {
+const GameStore = ({ data }) => {
   return (
     <section className="flex flex-col gap-5">
       <h1 className="text-5xl uppercase">Lojas</h1>
       <div className="flex flex-col gap-5">
-        {game.stores.map((item, index) => (
+        {data.stores.map((item, index) => (
           <div
             className="border-2 flex rounded-xl border-gamingBlack100 justify-between py-3 items-center px-5"
             key={index}
