@@ -10,7 +10,7 @@ const Banner = () => {
   const { pathname } = useLocation();
   const filteredBanners = bannerData.filter((item) => item.status === pathname);
 
-  const path = pathname === "/developers" ? "/developers/" : "/destaques/";
+  let path = pathname === "/" ? "/destaques/" : `${pathname}/`;
 
   const swiperSettings = {
     pagination: { clickable: true },
@@ -53,9 +53,9 @@ const Banner = () => {
             />
             <div className="container flex justify-center">
               <div className="absolute block z-30 p-6 max-w-[700px] h-[325px] fade-in lg:p-0 top-[60px] sm:h-[260px] lg:top-1/4">
-                <h1 className="font-normal uppercase text-5xl lg:text-7xl">
+                <h1 className="font-normal uppercase text-4xl lg:text-7xl">
                   {item.titulo}
-                  <p className="text-2xl mt-3">{item.descricao}</p>
+                  <p className="text-xl mt-3 lg:text-2xl">{item.descricao}</p>
                 </h1>
               </div>
             </div>

@@ -40,5 +40,26 @@
     "descricao": "Embarque em lutas brutais, descubra segredos ocultos e conquiste troféus de prestígio com cada personagem. ",
     "status": "/developers",
     "ordem": 3
+  },
+  {
+    "id": 7,
+    "titulo": "A maior dúvida de um gamer: Qual o próximo lugar que você pode dar o play?",
+    "descricao": "Escolha a melhor plataforma para os seus jogos! Seja no console ou no PC, explore novas aventuras e desafios emocionantes.",
+    "status": "/platforms",
+    "ordem": 1
+  },
+  {
+    "id": 8,
+    "titulo": "Preciso economizar! Console ou PC?",
+    "descricao": "Ambas escolhas são boas, mas afinal, qual será mais em conta para seu bolso? Descubra as vantagens e desvantagens de cada opção e tome a melhor decisão para sua diversão.",
+    "status": "/platforms",
+    "ordem": 2
+  },
+  {
+    "id": 9,
+    "titulo": "Confira as diferenças das antigas gerações para as novas",
+    "descricao": "Xbox 360 continua sendo o console mais vendido do que o PlayStation 3. Explore como a tecnologia evoluiu ao longo dos anos e descubra o que as novas gerações de consoles têm a oferecer.",
+    "status": "/platforms",
+    "ordem": 3
   }
 ]

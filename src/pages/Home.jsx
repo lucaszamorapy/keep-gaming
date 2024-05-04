@@ -1,11 +1,11 @@
-import AllGames from "../components/games/AllGames";
 import Banner from "../components/banner/Banner";
+import AllDataAPI from "../components/AllDataAPI";
 
 const Home = () => {
   return (
     <section className="animeLeft">
       <Banner />
-      <AllGames />
+      <AllDataAPI slug={"games"} />
     </section>
   );
 };
