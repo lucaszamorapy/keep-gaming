@@ -45,7 +45,7 @@ const AllDevelopers = () => {
             <Loading />
           ) : (
             <>
-              <h1 className="text-5xl uppercase mt-10 mb-5">
+              <h1 className="text-5xl uppercase mt-10 mb-5 lg:text-7xl">
                 Maiores Desenvolvedores
               </h1>
               <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 items-center">

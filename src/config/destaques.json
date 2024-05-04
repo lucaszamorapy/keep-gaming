@@ -29,15 +29,15 @@
   },
   {
     "id": 5,
-    "titulo": "Estratégia Redefinida pela Ubisoft: Torne-se um Mestre!",
+    "titulo": "Estratégia pela Rocksteady: Torne-se um Mestre!",
     "descricao": "Na Ubisoft, a estratégia é a chave para a vitória. Domine técnicas avançadas, planeje sua jogada perfeita e reivindique o título de mestre em jogos de estratégia. Entre para a elite dos jogadores!",
     "status": "/developers",
     "ordem": 2
   },
   {
     "id": 6,
-    "titulo": "Aventuras Épicas com a Sony Interactive Entertainment!",
-    "descricao": "Embarque em aventuras inesquecíveis, descubra segredos ocultos e conquiste troféus de prestígio com a Sony Interactive Entertainment. Explore mundos fascinantes e torne-se uma lenda dos jogos!",
+    "titulo": "Lutas Épicas com a NetherRealm Studios!",
+    "descricao": "Embarque em lutas brutais, descubra segredos ocultos e conquiste troféus de prestígio com cada personagem. Explore mundos fascinantes e torne-se uma lenda dos jogos!",
     "status": "/developers",
     "ordem": 3
   }

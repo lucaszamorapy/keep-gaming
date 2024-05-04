@@ -56,7 +56,7 @@ const Banner = () => {
                 <h1 className="font-normal uppercase text-5xl lg:text-7xl">
                   {item.titulo}
                 </h1>
-                <p className="text-xl mt-3">{item.descricao}</p>
+                <p className="text-2xl mt-3">{item.descricao}</p>
               </div>
             </div>
           </SwiperSlide>
