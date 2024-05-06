@@ -61,5 +61,26 @@
     "descricao": "Xbox 360 continua sendo o console mais vendido do que o PlayStation 3. Explore como a tecnologia evoluiu ao longo dos anos e descubra o que as novas gerações de consoles têm a oferecer.",
     "status": "/platforms",
     "ordem": 3
+  },
+  {
+    "id": 10,
+    "titulo": "A Epic a maior fornecedora da tecnologia engine 3D",
+    "descricao": "A Epic opera o Fortnite, um dos maiores jogos do mundo e um vibrante ecossistema de experiências de entretenimento social, que incluem jogos próprios.",
+    "status": "/stores",
+    "ordem": 1
+  },
+  {
+    "id": 11,
+    "titulo": "Xbox Store, o maior catálogo em jogos e entretenimento",
+    "descricao": "Ninguém tem mais conteúdo para o seu Xbox. Obtenha os últimos lançamentos, sucessos exclusivos, passes de temporada, complementos, jogos independentes e mais! Tudo isso por ótimos preços.",
+    "status": "/stores",
+    "ordem": 3
+  },
+  {
+    "id": 12,
+    "titulo": "Explore a PlayStation Store e confira as maiores promoções!",
+    "descricao": "Com uma das maiores obras do mundo dos games The Last of Us, PlayStation conta com a sua super loja de jogos com descontos imperdíveis!",
+    "status": "/stores",
+    "ordem": 2
   }
 ]

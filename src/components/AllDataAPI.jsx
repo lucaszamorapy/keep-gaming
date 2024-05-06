@@ -12,10 +12,11 @@ const AllDataAPI = ({ slug }) => {
   const [data, setData] = useState([]);
   const { request, loading, setLoading } = useFetch();
   const [page, setPage] = useState(1);
+  const [pageSize, setPageSize] = useState(20);
 
   useEffect(() => {
     const getDataAPI = async () => {
-      const url = `${gamesURL}${slug}?${apiKey}&page_size=20&page=${page}`;
+      const url = `${gamesURL}${slug}?${apiKey}&page_size=${20}&page=${page}`;
       const { json } = await request(url);
       if (json && json.results) {
         setData((prevDatas) => {
@@ -29,7 +30,7 @@ const AllDataAPI = ({ slug }) => {
     };
 
     getDataAPI();
-  }, [request, page]);
+  }, [request, page, pageSize]);
 
   const handleLoadMore = () => {
     setLoading(true);
@@ -56,20 +57,24 @@ const AllDataAPI = ({ slug }) => {
                   )
                 )}
               </div>
-              <div className="flex justify-center mt-8">
-                {loading ? (
-                  <Loading />
-                ) : (
-                  <Button
-                    onClick={handleLoadMore}
-                    styleCard={false}
-                    style={
-                      "text-white uppercase rounded-lg tracking-widest py-2 px-5 bg-gamingBlack100 hover:bg-opacity-60 duration-300 ease-in-out "
-                    }
-                    buttonText={"Carregar Mais"}
-                  />
-                )}
-              </div>
+              {data.length >= pageSize ? (
+                <div className="flex justify-center mt-8">
+                  {loading ? (
+                    <Loading />
+                  ) : (
+                    <Button
+                      onClick={handleLoadMore}
+                      styleCard={false}
+                      style={
+                        "text-white uppercase rounded-lg tracking-widest py-2 px-5 bg-gamingBlack100 hover:bg-opacity-60 duration-300 ease-in-out "
+                      }
+                      buttonText={"Carregar Mais"}
+                    />
+                  )}
+                </div>
+              ) : (
+                ""
+              )}
             </>
           )}
         </div>
