@@ -2,7 +2,7 @@ import React from "react";
 import ImageSkeleton from "../../utils/imageSkeleton/imageSkeleton";
 import { Link } from "react-router-dom";
 
-const DeveloperCard = ({ data }) => {
+const GlobalCard = ({ data }) => {
   return (
     <div className="flex flex-col ">
       <ImageSkeleton src={data.image_background} alt={data.name} />
@@ -25,4 +25,4 @@ const DeveloperCard = ({ data }) => {
   );
 };
 
-export default DeveloperCard;
+export default GlobalCard;

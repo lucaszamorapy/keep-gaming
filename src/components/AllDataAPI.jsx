@@ -2,10 +2,8 @@ import React, { useEffect, useState } from "react";
 import useFetch from "../hooks/useFetch";
 import Loading from "../utils/loading/Loading";
 import Button from "../utils/Button";
-import DeveloperCard from "./cards/DeveloperCard";
 import GameCard from "./cards/GameCard";
-import PlatformCard from "./cards/PlatformCard";
-import StoreCard from "./cards/StoreCard";
+import GlobalCard from "./cards/GlobalCard";
 
 const gamesURL = import.meta.env.VITE_API;
 const apiKey = import.meta.env.VITE_API_KEY;
@@ -50,17 +48,13 @@ const AllDataAPI = ({ slug }) => {
                 {slug}
               </h1>
               <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 items-center">
-                {data.map((item, index) => {
-                  if (slug === "games") {
-                    return <GameCard key={index} data={item} showLink={true} />;
-                  } else if (slug === "developers") {
-                    return <DeveloperCard key={index} data={item} />;
-                  } else if (slug === "platforms") {
-                    return <PlatformCard key={index} data={item} />;
-                  } else {
-                    return <StoreCard key={index} data={item} />;
-                  }
-                })}
+                {data.map((item, index) =>
+                  slug === "games" ? (
+                    <GameCard key={index} data={item} showLink={true} />
+                  ) : (
+                    <GlobalCard key={index} data={item} />
+                  )
+                )}
               </div>
               <div className="flex justify-center mt-8">
                 {loading ? (
