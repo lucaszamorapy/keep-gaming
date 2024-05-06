@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import ScrollToTopOnPageChange from "./components/ScrollToTopOnPageChange";
 import Developers from "./pages/Developers";
 import Platforms from "./pages/Platforms";
+import Stores from "./pages/Stores";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/searchpage" element={<SearchPage />} />
             <Route path="/developers" element={<Developers />} />
             <Route path="/platforms" element={<Platforms />} />
+            <Route path="/stores" element={<Stores />} />
           </Routes>
         </main>
         <Footer />
