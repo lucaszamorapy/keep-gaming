@@ -10,7 +10,7 @@ const apiKey = import.meta.env.VITE_API_KEY;
 
 const AllDataAPI = ({ slug }) => {
   const [data, setData] = useState([]);
-  const { request, loading, setLoading } = useFetch();
+  const { request, loading } = useFetch();
   const [page, setPage] = useState(1);
   const [pageSize, setPageSize] = useState(20);
 
@@ -26,14 +26,12 @@ const AllDataAPI = ({ slug }) => {
           return [...prevDatas, ...uniqueData];
         });
       }
-      console.log(data);
     };
 
     getDataAPI();
   }, [request, page, pageSize]);
 
   const handleLoadMore = () => {
-    setLoading(true);
     setPage(page + 1);
   };
 
