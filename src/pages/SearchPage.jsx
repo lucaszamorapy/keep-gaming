@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Loading from "../utils/loading/Loading";
 import GameCard from "../components/cards/GameCard";
 import Button from "../utils/Button";
+import Head from "../helper/Head";
 
 const gamesURL = import.meta.env.VITE_API;
 const apiKey = import.meta.env.VITE_API_KEY;
@@ -28,6 +29,10 @@ const SearchPage = () => {
 
   return (
     <section className="px-5 mt-32 animeLeft lg:px-0">
+      <Head
+        title={`${query}`}
+        description={"Search Page do site Keep Gaming"}
+      />
       <div className="flex justify-center gap-5 items-center">
         <div className="container">
           {loading ? (

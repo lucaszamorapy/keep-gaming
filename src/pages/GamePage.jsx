@@ -6,6 +6,7 @@ import GameDescription from "../components/games/GameDescription";
 import Loading from "../utils/loading/Loading";
 import GamePlatform from "../components/games/GamePlatform";
 import GameStore from "../components/games/GameStore";
+import Head from "../helper/Head";
 
 const gamesURL = import.meta.env.VITE_API;
 const apiKey = import.meta.env.VITE_API_KEY;
@@ -33,6 +34,10 @@ const GamePage = () => {
       <div className="container animeLeft ">
         {game ? (
           <>
+            <Head
+              title={`${game.name}`}
+              description={"Home do site Keep Gaming"}
+            />
             <GameDescription data={game} />
             <GamePlatform data={game} />
             <div className="grid gap-10 mt-10 grid-cols-1 lg:grid-cols-2">
